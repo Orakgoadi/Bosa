@@ -9,20 +9,30 @@
   <body>
    <div class="weather-app">
     <header>
-      <input type="search" placeholder="Enter a city..." required>
-      <input type="submit" value="search">
+     <form class="search-form">
+      <input type="search" placeholder="Enter a city..." required class="search-form-input">
+      <input type="submit" value="search" class="search-form-button">
+     </form>
     </header>
     <main>
+    <div class=weather-app-data>
      <div>
-      <h1>Pretoria</h1>
-       <p>
+      <h class="city">Pretoria</h1>
+       <p class="weather-details">
         Sunday 13:13, overcast clouds
         <br>
-        Humidity: 55%, Wind: 3.49km/h
+        Humidity: <strong>55%</strong>, Wind: <strong>3.49km/h</strong>
        </p>
      </div>
-    <div>
-     🌥17°C
+     <div class="weather-info-container">
+      <div class="weather-icon">
+        🌥
+      </div>
+      <div class="weather-temperature">
+        17
+      </div>
+      <div class="weather-units">°C</div>
+     </div>
     </div>
     </main>
     <footer>This project is by 
